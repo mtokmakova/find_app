@@ -1,0 +1,3 @@
+C:/Users/maryt/CLionProjects/find_app/cmake-build-debug/CMakeFiles/find_app.dir
+C:/Users/maryt/CLionProjects/find_app/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/maryt/CLionProjects/find_app/cmake-build-debug/CMakeFiles/rebuild_cache.dir
