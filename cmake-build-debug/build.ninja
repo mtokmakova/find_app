@@ -65,6 +65,7 @@ build CMakeFiles/find_app.dir/main.cpp.obj: CXX_COMPILER__find_app_Debug C$:/Use
 
 build find_app.exe: CXX_EXECUTABLE_LINKER__find_app_Debug CMakeFiles/find_app.dir/main.cpp.obj
   FLAGS = -g
+  LINK_FLAGS = -static -static-libgcc -static-libstdc++
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\find_app.dir
   POST_BUILD = cd .
