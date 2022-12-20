@@ -36,8 +36,8 @@ int main(int argc, char* argv[]) {
     setlocale(LC_ALL, "rus");
 
 //    string root = "C:";
-    string root = "C:";
-
+//    string root = "C:";
+    string root = argv[1];
     string finding;
     int max_thread = 10;
 
@@ -45,6 +45,7 @@ int main(int argc, char* argv[]) {
     tree.full_name = root;
     cout << "Building tree..." << endl;
     build_tree(root, &tree);
+    cout << tree.full_name << endl;
     cout << "Tree was built..." << endl;
 
 
@@ -97,6 +98,7 @@ void build_tree(const string &root, Tree* tree) {
             queue_tree.push(temp_tree->childs[i]);
             queue_catalogs.push(temp_tree->childs[i]->full_name);
         }
+        tree = temp_tree;
     }
 }
 
@@ -125,6 +127,8 @@ void clear_tree(Tree &tree) {
         delete tree.childs[i];
     }
 }
+
+
 
 
 
